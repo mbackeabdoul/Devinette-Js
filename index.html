@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+        <div class="card col-7 p-3 my-5">
+            <h2>Trouver le bon nombre </h2>
+            <p class="text-success">Vous devez trouver un nombre entre 10 et 100 . vous n'avez que <span class="fw-bold fs-2 text-danger" id="sept"></span> essais.</p>
+            <p>Entrer votre nomber <span class="text-danger" id="plusGrand"></span></p>
+            <!-- <Span id="gagner" class="text-success"></Span> -->
+            <div class="mb-3 row d-flex ">
+              <label class="col-form-label">Votre Choix</label>
+              <div class="w-25">
+                <input type="number" class="form-control " id="input">
+              </div>
+            </div>
+            <div class="">
+              <button class="btn btn-primary w-50" id="button">Essayer</button>
+            </div>
+         </div>
+        </div>
+    
+        <script src="script.js"></script>
+</body>
+</html>
