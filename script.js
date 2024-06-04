@@ -1,12 +1,16 @@
-let nombreAleatoire = Math.floor(Math.random() * (100 - 1 + 1)) + 1
+let nombreAleatoire = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+console.log(nombreAleatoire);
 let button = document.querySelector("button");
 let span = document.getElementById("plusGrand");
 let sept = document.getElementById("sept");
+let essai= 0
 let tentative=10
-sept.innerText= tentative
+sept.innerText= tentative;
+
 
         button.addEventListener("click", function(){
         let input = parseInt(document.getElementById("input").value);
+
         
         if (isNaN(input)) {
         span.innerText="Le champ est vide !"
@@ -24,12 +28,21 @@ sept.innerText= tentative
             }
             
             tentative--;
+            essai++
             sept.innerText = tentative;
-    
+            
             if (input == nombreAleatoire) {
-                span.innerText = (" Bravo vous avez Gagner !");
-                button.innerText = "Recommencer";        
+
+                span.innerText = (` Bravo vous avez Gagner, 
+                Aprés  ${essai} Essais`);
+                button.innerText = "Recommencer";
+
+
             }
             document.getElementById("input").value = "";
+           
         }
+       
    });
+
+ 
